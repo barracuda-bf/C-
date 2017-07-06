@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Methods;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace tfa
 {
@@ -11,12 +13,12 @@ namespace tfa
         static void Main(string[] args)
         {
             Step1();
-            //Step2();
-            //Step3();
-            //Step4();
-            //Step5();
-            //Step6();
-            //Step7();
+            Step2();
+            Step3();
+            Step4();
+            Step5();
+            Step6();
+            Step7();
             //Step8();
             //Step9();
             //Step10();
@@ -29,59 +31,64 @@ namespace tfa
 
         static void Step1()
         {
-            Console.WriteLine(Lab02.task4411(11.13) - 18.3);
+            Console.WriteLine("{0:F20}",Lab02.task4411(11.13) - 18.13);
             Console.WriteLine(Lab02.task4411(-7919) - -7912);
             Console.WriteLine(Lab02.task4411(0) - 7);
+            Console.WriteLine();
         }
 
-        //static void Step2()
-        //{
-        //    Console.WriteLine("{0:F6}", Lab02.task8428(45) - 0.7854);
-        //    Console.WriteLine("{0:F6}", Lab02.task8428(1125) - 19.6350);
-        //    Console.WriteLine("{0:F6}", Lab02.task8428(0));
-        //    Console.WriteLine("{0:F6}", Lab02.task8428(360) - 6.2832);
-        //    Console.WriteLine("{0:F6}", Lab02.task8428(90) - 1.5708);
-        //    Console.WriteLine("{0:F6}", Lab02.task8428(2000) - 34.9066);
-        //}
+        static void Step2()
+        {
+            Console.WriteLine("{0:F6}", Lab02.task8428(45) - 0.7854);
+            Console.WriteLine("{0:F6}", Lab02.task8428(1125) - 19.6350);
+            Console.WriteLine("{0:F6}", Lab02.task8428(0));
+            Console.WriteLine("{0:F6}", Lab02.task8428(360) - 6.2832);
+            Console.WriteLine("{0:F6}", Lab02.task8428(90) - 1.5708);
+            Console.WriteLine("{0:F6}", Lab02.task8428(2000) - 34.9066);
+            Console.WriteLine();
+        }
 
-        //static void Step3()
-        //{
-        //    Console.WriteLine("{0:F6}", Lab02.task1262(7583) - 4.6025);
-        //    Console.WriteLine("{0:F6}", Lab02.task1262(200) - -4.6985);
-        //    Console.WriteLine("{0:F6}", Lab02.task1262(360) - 5);
-        //    Console.WriteLine("{0:F6}", Lab02.task1262(90) - 0);
-        //}
+        static void Step3()
+        {
+            Console.WriteLine("{0:F6}", Lab02.task1262(7583) - 4.6025);
+            Console.WriteLine("{0:F6}", Lab02.task1262(200) - -4.6985);
+            Console.WriteLine("{0:F6}", Lab02.task1262(360) - 5);
+            Console.WriteLine("{0:F6}", Lab02.task1262(90) - 0);
+            Console.WriteLine();
+        }
 
-        //static void Step4()
-        //{
-        //    Console.WriteLine("{0:F6}", Lab02.task2790(6997) - 0.9205);
-        //    Console.WriteLine("{0:F6}", Lab02.task2790(31) - 0.8572);
-        //    Console.WriteLine("{0:F6}", Lab02.task2790(0) - 1.0000);
-        //}
+        static void Step4()
+        {
+            Console.WriteLine("{0:F6}", Lab02.task2790(6997) - 0.9205);
+            Console.WriteLine("{0:F6}", Lab02.task2790(31) - 0.8572);
+            Console.WriteLine("{0:F6}", Lab02.task2790(0) - 1.0000);
+            Console.WriteLine();
+        }
 
-        //static void Step5()
-        //{
-        //    Console.WriteLine("{0:F6}", Lab02.task9164(90, 90) - 0.0);
-        //    Console.WriteLine("{0:F6}", Lab02.task9164(90, 0) - 1.0);
-        //    Console.WriteLine("{0:F6}", Lab02.task9164(7559, 7549) - -0.2079);
-        //}
+        static void Step5()
+        {
+            Console.WriteLine("{0:F6}", Lab02.task9164(90, 90) - 0.0);
+            Console.WriteLine("{0:F6}", Lab02.task9164(90, 0) - 1.0);
+            Console.WriteLine("{0:F6}", Lab02.task9164(7559, 7549) - -0.2079);
+            Console.WriteLine();
+        }
 
-        //static void Step6()
-        //{
-        //    Console.WriteLine("{0:F6}", Lab02.task5789(1, 1, 3, 4) - 3.6055);
-        //    Console.WriteLine("{0:F6}", Lab02.task5789(-2, 4, 8, -10) - 17.2046);
-        //    Console.WriteLine("{0:F6}", Lab02.task5789(0, 0, -5, -7) - 8.6023);
-        //    Console.WriteLine("{0:F6}", Lab02.task5789(0, 0, 0, 0) - 0);
-        //    Console.WriteLine("{0:F6}", Lab02.task5789(-1, -3, 2, 9) - 12.3693);
-        //}
+        static void Step6()
+        {
+            Console.WriteLine("{0:F6}", Lab02.task5789(1, 1, 3, 4) - 3.6055);
+            Console.WriteLine("{0:F6}", Lab02.task5789(-2, 4, 8, -10) - 17.2046);
+            Console.WriteLine("{0:F6}", Lab02.task5789(0, 0, -5, -7) - 8.6023);
+            Console.WriteLine("{0:F6}", Lab02.task5789(0, 0, 0, 0) - 0);
+            Console.WriteLine("{0:F6}", Lab02.task5789(-1, -3, 2, 9) - 12.3693);
+        }
 
-        //static void Step7()
-        //{
-        //    Console.WriteLine(Lab05.task5662(1, 2, 3));
-        //    Console.WriteLine(Lab05.task5662(3, 17, 5));
-        //    Console.WriteLine(Lab05.task5662(3, 6, 3));
-        //    Console.WriteLine(Lab05.task5662(0, 7, 13));
-        //}
+        static void Step7()
+        {
+            Console.WriteLine(Lab05.task5662(1, 2, 3));
+            Console.WriteLine(Lab05.task5662(3, 17, 5));
+            Console.WriteLine(Lab05.task5662(3, 6, 3));
+            Console.WriteLine(Lab05.task5662(0, 7, 13));
+        }
 
         //static void Step8()
         //{
